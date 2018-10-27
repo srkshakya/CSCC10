@@ -131,7 +131,7 @@ a:hover
   height: $tileHeight
   object-fit: cover
 
-.tile__details
+.tile__detail
   position: absolute
   bottom: 0
   left: 0
@@ -280,7 +280,7 @@ a:hover
   height: $tileHeight
   object-fit: cover
 
-.tile__details
+.tile__detail
   position: absolute
   bottom: 0
   left: 0
@@ -374,7 +374,7 @@ a:hover
     height: $tileHeight
     object-fit: cover
 
-  .tile__details
+  .tile__detail
     position: absolute
     bottom: 0
     left: 0
@@ -510,7 +510,7 @@ a:hover {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.tile__details {
+.tile__detail {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -521,28 +521,17 @@ a:hover {
   background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
   transition: 450ms opacity;
 }
-.tile__details:after,
-.tile__details:before {
+.tile__detail:after,
+.tile__detail:before {
   content: '';
   position: absolute;
   top: 50%;
   left: 50%;
   display: #000;
 }
-.tile__details:after {
-  margin-top: -25px;
-  margin-left: -25px;
-  width: 50px;
-  height: 50px;
-  border: 3px solid #ecf0f1;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 100%;
-  background: rgba(0,0,0,0.5);
-  z-index: 1;
-}
-.tile__details:before {
-  content: '▶';
+
+.tile__detail:before {
+  content: '';
   left: 0;
   width: 100%;
   font-size: 30px;
@@ -551,7 +540,7 @@ a:hover {
   text-align: center;
   z-index: 2;
 }
-.tile:hover .tile__details {
+.tile:hover .tile__detail {
   opacity: 1;
 }
 .tile__title {
